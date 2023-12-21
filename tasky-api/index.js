@@ -17,6 +17,9 @@ const errHandler = (err, req, res, next) => {
 
 const app = express();
 
+// Enable CORS for all requests
+app.use(cors());
+
 const port = process.env.PORT;
 
 app.use(errHandler)
